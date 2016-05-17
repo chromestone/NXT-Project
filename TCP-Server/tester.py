@@ -1,6 +1,7 @@
-# Program to make NXT brick beep using NXT Python with Bluetooth socket
-#
-# Simon D. Levy  CSCI 250   Washington and Lee University    April 2011
+# CODE COMES FROM
+# http://home.wlu.edu/~levys/courses/cs250s2011/nxt_beep.py
+# THIS PORTION I DID NOT WRITE (BUT DID MODIFY SLIGHTLY)
+# LAUNCH THIS (main) TO TEST CONNECTION WITH A BEEP
 
 # Change this ID to match the one on your brick.  You can find the ID by doing Settings / NXT Version.  
 # You will have to put a colon between each pair of digits.
@@ -22,10 +23,10 @@ class BrickGetter:
 		# On success, socket is non-empty
 		if self.sock:
 
-		   print('Connecting...');
+		   print('Connecting to brick...');
 		   # Connect to brick
 		   brick = self.sock.connect()
-		   print('Connected!');
+		   print('Connected to brick!');
 		   return brick
 
 		   # Play tone A above middle C for 1000 msec
