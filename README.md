@@ -1,17 +1,17 @@
-# NXT Project
+# NXT Project 
 
 
 Integrating Java, which gets inputs (i.e. controllers), with Python through TCP and Python with NXT through Bluetooth.
-Inputs (i.e. controllers) -> Java <-- TCP --> Python <-- Bluetooth --> NXT (Brick)
+Inputs (i.e. controllers) -> Java <-- TCP --> Python <-- Bluetooth --> NXT (Brick) 
 
 
-Python runs the TCP server:
+Python runs the TCP server: 
 
 
-    (Note: Only Python 2.7 currently supported)
+    (Note: Only Python 2.7 currently supported)  
 
 
-    Dependencies:
+    Dependencies: 
 
 
         NXT-Python: https://github.com/Eelviny/nxt-python
@@ -19,10 +19,10 @@ Python runs the TCP server:
 ------->(Note: other libraries needed are listed on the above GitHub page's readme)<-------
 
 
-Java runs the TCP client:
+Java runs the TCP client: 
 
 
-    Dependencies:
+    Dependencies: 
 
 
         libGDX: http://libgdx.badlogicgames.com
