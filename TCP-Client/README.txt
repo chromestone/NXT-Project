@@ -1,6 +1,6 @@
- 
-The code provided “registers” a controller when it is plugged in (I believe USB only) 
+The code provided currently accepts joystick input. 
 
+The code provided “registers” a controller when it is plugged in (I believe USB only) 
 
 Instructions:
 (First time) Run the jar; this will create the config file.

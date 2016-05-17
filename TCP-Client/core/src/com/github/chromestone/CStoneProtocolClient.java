@@ -61,15 +61,6 @@ public class CStoneProtocolClient extends Thread {
 					app.disconnected(controller);
 				}
 			});
-
-//			if (e.getMessage().contains("Socket closed")) {
-//				
-//				System.out.println("Socket closed");
-//			}
-//			else {
-//
-//				e.printStackTrace();
-//			}
 		}
 	}
 }
