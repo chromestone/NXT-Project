@@ -5,8 +5,7 @@ Integrating Java, which gets inputs (i.e. controllers), with Python through TCP 
 Inputs (i.e. controllers) -> Java <-- TCP --> Python <-- Bluetooth --> NXT (Brick) 
 
 
-Python runs the TCP server: 
-
+Python runs the TCP server:
 
     (Note: Only Python 2.7 currently supported)  
 
@@ -16,7 +15,7 @@ Python runs the TCP server:
 
         NXT-Python: https://github.com/Eelviny/nxt-python
 
-------->(Note: other libraries needed are listed on the above GitHub page's readme)<-------
+        (IMPORTANT: other libraries needed are listed on the above GitHub page's readme)
 
 
 Java runs the TCP client: 
