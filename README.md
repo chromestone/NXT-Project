@@ -20,4 +20,4 @@ Java runs the TCP client:
 
         libGDX: http://libgdx.badlogicgames.com
         
-        (Note: A COMPILED JAR FOR CONTROLLER INPUT [i.e. XBox Controller] IS AVAILABLE HERE: [TBA])
+        (Note: A COMPILED JAR FOR CONTROLLER INPUT [i.e. XBox Controller] IS AVAILABLE HERE: https://www.dropbox.com/s/0oaka8viu39z4tu)
