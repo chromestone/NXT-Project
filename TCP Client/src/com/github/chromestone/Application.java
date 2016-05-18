@@ -36,7 +36,7 @@ public class Application extends ApplicationAdapter implements ControllerListene
 	private OrthographicCamera cam;
 	private ShapeRenderer shapeRenderer;
 	
-	private CStoneProtocolClient client;
+	private TCPClient client;
 	private Controller myController;
 	
 	@Override
@@ -200,7 +200,7 @@ public class Application extends ApplicationAdapter implements ControllerListene
 //			client.interrupt();
 //		}
 //		myController = controller;
-//		client = new CStoneProtocolClient(this, myController, inStream, outStream);
+//		client = new TCPClient(this, myController, inStream, outStream);
 //		client.start();
 //		//return true;
 		//}
@@ -216,7 +216,7 @@ public class Application extends ApplicationAdapter implements ControllerListene
 			client.interrupt();
 		}
 		myController = controller;
-		client = new CStoneProtocolClient(this, myController, inStream, outStream);
+		client = new TCPClient(this, myController, inStream, outStream);
 		client.start();
 	}
 
