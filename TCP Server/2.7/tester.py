@@ -1,11 +1,15 @@
 # CODE COMES FROM
 # http://home.wlu.edu/~levys/courses/cs250s2011/nxt_beep.py
 # THIS PORTION I DID NOT WRITE (BUT DID MODIFY SLIGHTLY)
-# LAUNCH THIS (main) TO TEST CONNECTION WITH A BEEP
+
+# Program to make NXT brick beep using NXT Python with Bluetooth socket
+#
+# Simon D. Levy  CSCI 250   Washington and Lee University    April 2011
 
 # Change this ID to match the one on your brick.  You can find the ID by doing Settings / NXT Version.  
 # You will have to put a colon between each pair of digits.
-ID = '00:16:53:1C:33:04'
+# NOTE: IF USING TCPSERVER, PLEASE CHANGE IN CONFIG FILE
+ID = None #'00:16:53:1C:33:04'
 
 # This is all we need to import for the beep, but you'll need more for motors, sensors, etc.
 from nxt.bluesock import BlueSock
