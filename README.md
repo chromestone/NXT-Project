@@ -9,7 +9,7 @@ Python runs the TCP server:
 
     Dependencies: 
 
-        NXT-Python (https://github.com/Eelviny/nxt-python)
+        NXT-Python: https://github.com/Eelviny/nxt-python
 
         (IMPORTANT: other libraries needed are listed on the above GitHub page's readme)
 
@@ -18,7 +18,6 @@ Java runs the TCP client:
 
     Dependencies: 
 
-        libGDX (http://libgdx.badlogicgames.com)
+        libGDX: http://libgdx.badlogicgames.com
         
-        Note: A COMPILED JAR FOR CONTROLLER INPUT [i.e. XBox Controller] IS AVAILABLE HERE:
-            TCPClient-Dropbox (https://www.dropbox.com/s/4jykgd9wgxueub9/tcpclient.zip)
+        (Note: A COMPILED JAR FOR CONTROLLER INPUT [i.e. XBox Controller] IS AVAILABLE HERE: https://www.dropbox.com/s/4jykgd9wgxueub9/tcpclient.zip)
