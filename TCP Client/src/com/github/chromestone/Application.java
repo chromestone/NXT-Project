@@ -77,7 +77,7 @@ public class Application extends ApplicationAdapter implements ControllerListene
 				
 				if (propertiesFile.createNewFile()) {
 					
-					defaults.store(new FileOutputStream(propertiesFile), "Derek waz here. #DEEZNUTS2016");
+					defaults.store(new FileOutputStream(propertiesFile), "");
 				}
 				else {
 					
