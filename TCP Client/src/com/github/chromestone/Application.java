@@ -23,10 +23,17 @@ import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer.ShapeType;
 import com.badlogic.gdx.math.Vector3;
 
+/**
+ * Main class of the "application"
+ * 
+ * @author Derek Zhang
+ *
+ */
 public class Application extends ApplicationAdapter implements ControllerListener, InputProcessor {
 	
 	public static boolean debug = false;
 	
+	//represents the status of the program, which is displayed
 	private Color status;
 	
 	private Socket socket;
@@ -34,16 +41,21 @@ public class Application extends ApplicationAdapter implements ControllerListene
 	private DataOutputStream outStream;
 	
 	private OrthographicCamera cam;
+	//provides shape drawing
 	private ShapeRenderer shapeRenderer;
 	
 	private TCPClient client;
+	//the controller currently polling, may be null
 	private Controller myController;
 	
 	@Override
 	public void create() {
 
+		//stuff the libGDX makes you do to set up the window "normally"
+		//otherwise screens that aren't squares (which most screens aren't) will render weirdly
 		cam = new OrthographicCamera();
 		cam.setToOrtho(true, Gdx.graphics.getWidth(), Gdx.graphics.getHeight());
+		//setting up shape drawing
 		shapeRenderer = new ShapeRenderer();
 		shapeRenderer.setProjectionMatrix(cam.combined);
 		
@@ -56,6 +68,8 @@ public class Application extends ApplicationAdapter implements ControllerListene
 		defaults.setProperty("port", "5005");
 		defaults.setProperty("debug", "false");
 		
+		//loads the config file if it exists
+		//if not defaults to defaults listed above and creates config file
 		Properties properties = new Properties(defaults);
 		File propertiesFile = new File("./nxt-client.config");
 		if (propertiesFile.exists()) {
@@ -136,6 +150,8 @@ public class Application extends ApplicationAdapter implements ControllerListene
 		Gdx.gl.glClearColor(status.r, status.g, status.b, status.a);
 		Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
 		
+		//draws the square red button for "emergencies"
+		//though one should shut down the actual server in case of one
 		shapeRenderer.begin(ShapeType.Filled);
 		shapeRenderer.setColor(Color.RED);
 		shapeRenderer.rect(360, 360, 40, 40);
@@ -259,6 +275,8 @@ public class Application extends ApplicationAdapter implements ControllerListene
 	@Override
 	public boolean touchDown(int screenX, int screenY, int pointer, int button) {
 		
+		//I know it's hardcoded and bad, but I got lazy
+		//if the red button is clicked, its equivalent to disconnecting the controller
 		if (screenX > 360 && screenY > 360) {
 			
 			disconnected(myController);
