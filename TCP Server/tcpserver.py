@@ -22,7 +22,7 @@ def main():
 			print('Check config file (format).')
 			return
 		except IOError:
-			print("Someting vewy wong!")
+			print("Something very wrong!")
 			return
 
 	else:
@@ -56,6 +56,11 @@ def main():
 		print('Started session')
 
 		#set variables used to power motors, etc.
+
+		#CURRENTLY SUPPORTS ONE MOTOR CONTROLLER
+		#ADD MORE DEPENDING ON ROBOT CONFIGURATION (IN REAL LIFE)
+		#GO TO LINE 81 AND REGISTER COMMANDS FOR MOTOR CONTROL
+
 		#motorCont = MotorCon(brick, 0)
 		motorConLeft = MotorCon(brick, 0)#************
 		#motorConRight = MotorCon(brick, 1)
@@ -69,7 +74,10 @@ def main():
 			if not data:
 				break
 
-			#pipeline represents end 
+			#pipeline represents end
+
+			#***** REGISTER COMMANDS HERE *****
+
 			if '|' == data:
 
 				command = receivedData.tostring()
