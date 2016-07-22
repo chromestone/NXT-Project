@@ -21,3 +21,4 @@ Java runs the TCP client:
         libGDX: http://libgdx.badlogicgames.com
         
         (Note: A COMPILED JAR FOR CONTROLLER INPUT [i.e. XBox Controller] IS AVAILABLE HERE: https://www.dropbox.com/s/4jykgd9wgxueub9/tcpclient.zip)
+Note: Currently only two motors and their corresponding "commands" are hard coded in. The commands are user defined and can be changed in the TCP server, but the TCP client must be compiled to send such user defined commands as one wishes.
