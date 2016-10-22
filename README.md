@@ -1,6 +1,6 @@
 # NXT Project 
 
-The purpose of this project is to control a robot with a Xbox controller.
+The purpose of this project is to control a robot with a Xbox controller. However, the input can come from anything and can be translated into self defined commands for the robot.
 
 Integrating Java, which gets inputs (i.e. controllers), with Python through TCP and Python with NXT through Bluetooth.
 Inputs (i.e. controllers) -> Java <-- TCP --> Python <-- Bluetooth --> NXT (Brick) 
